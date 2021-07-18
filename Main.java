@@ -9,6 +9,7 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		int opt,choice,select;
 		
+		
 		do {
 		System.out.println("Please Select User as : \n1-Admin \n2-Customer");
 		choice = scan.nextInt();
@@ -31,14 +32,14 @@ public class Main {
 		         
 		case 2 :do { 
 				 System.out.println("** Welcome to the grocery **");
-        		 System.out.println("\n1.Grocery Background \n2.Grocery Items \n3.Exit");
+        		 System.out.println("\n1.Billing System \n2.Grocery Items \n3.Exit");
                  System.out.println("Please select your option : ");
                  opt = scan.nextInt();
                  switch(opt) {
-                 case 1 :GroceryBackground d = new GroceryBackground();
-                 		 System.out.println(d);break;
-                 case 2 :GroceryItems ad = new GroceryItems();
-                	 	 System.out.println(ad);break;
+                 case 1 :BillingSystem b = new BillingSystem();
+                 		 System.out.println(b);break;
+                 case 2 :GroceryItems a = new GroceryItems();
+                	 	 System.out.println(a);break;
                 	 	 
                  }
                  if(opt<1 && opt>3) {
@@ -59,5 +60,7 @@ public class Main {
 	}
 
 }
+
+
 
 
