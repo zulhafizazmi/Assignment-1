@@ -66,5 +66,7 @@ public class Finance extends GroceryBackground{
 		
 	}
 
+	public void printinfo() {
 
+}
 }
