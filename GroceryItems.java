@@ -13,7 +13,10 @@ public class GroceryItems extends GroceryBackground {
 	
 	GroceryItems(){
 	    System.out.println("***Shop Menu***");
-		System.out.println("Select category : ");
+	    System.out.println("\nThere are 3 category of items.");
+		do {
+		System.out.println("\n1-Shampoo \n2-Soap \n3-Cosmetics");
+		System.out.println("Please select the items to see the details : ");
 		int option = scan.nextInt();
 		switch(option) {
 	
@@ -23,7 +26,7 @@ public class GroceryItems extends GroceryBackground {
 	     System.out.println("Brand  : " + brand);
 	     this.suitableFor = "Women";
 	     System.out.println("Suitable for        : " + suitableFor);
-	     this.price = 11.99;
+	     this.price = 9.00;
 	     System.out.printf("Price       : RM %.2f" , price);
 	     break;
 	     
@@ -35,7 +38,7 @@ public class GroceryItems extends GroceryBackground {
 		 System.out.println("Brand  : " + brand);
 		 this.suitableFor = "Anyone";
 		 System.out.println("Suitable for        : " + suitableFor);
-		 this.price = 15.99;
+		 this.price = 14.00;
 		 System.out.printf("Price       : RM %.2f" , price);
 		 break;
 		  
@@ -47,7 +50,7 @@ public class GroceryItems extends GroceryBackground {
 		  System.out.println("Brand       : " + brand);
 		  this.suitableFor = "Men";
 		  System.out.println("Suitable for        : " + suitableFor);
-		  this.price = 7.99;
+		  this.price = 12.00;
 		  System.out.printf("Price       : RM %.2f" , this.price);
 		  break;
 		 
@@ -62,7 +65,7 @@ public class GroceryItems extends GroceryBackground {
 
    }   
      
-     while(choice == 1); {
+	}while(choice == 1); {
 	 System.out.println("Have a nice day! See you again! " +super.name);
 	 
     }
@@ -77,7 +80,6 @@ public class GroceryItems extends GroceryBackground {
 
 	public double price() {
 		return price;
+
 }
-
-
 }
